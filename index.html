@@ -201,6 +201,18 @@ audio {
     <source src="music/Begoo Salam 2.mp3" type="audio/mpeg">
         </audio>
   </div>
+      <div class="music-card">
+        <div class="cover">
+    <img src="images/cover6.jpg" alt="کاور آهنگ">
+  </div>
+    <div class="info">
+            <h2>Nahkoda</h2>
+            <p>Reza Pishro</p>
+        </div>
+
+        <audio controls>
+    <source src="music/Nahkoda.mp3" type="audio/mpeg">
+        </audio>
 <script>
 const search = document.querySelector(".search");
 const songs = document.querySelectorAll(".music-card");
@@ -216,7 +228,7 @@ search.addEventListener("input", function () {
         } else {
             song.style.display = "none";
         }
-    });
+    
 });
 </script>
 </body>
