@@ -7,213 +7,92 @@
     <title>MusicBox | دنیای موسیقی</title>
 
     <style>
-    * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-body {
-    background: #0b0b0f;
-    color: white;
-    font-family: Arial, sans-serif;
-}
+        body {
+            background: #111;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
 
-header {
-    padding: 30px 20px;
-    text-align: center;
-    background: #12121a;
-}
+        header {
+            padding: 25px;
+            text-align: center;
+            background: #181818;
+        }
 
-header h1 {
-    font-size: 38px;
-}
+        header h1 {
+            font-size: 35px;
+        }
 
-header p {
-    color: #999;
-    margin-top: 8px;
-}
+        header p {
+            margin-top: 10px;
+            color: #aaa;
+        }
 
-.container {
-    max-width: 700px;
-    margin: auto;
-    padding: 25px 15px;
-}
+        .container {
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+        }
 
-.search {
-    width: 100%;
-    padding: 16px;
-    border: none;
-    border-radius: 15px;
-    background: #1b1b25;
-    color: white;
-    outline: none;
-    font-size: 16px;
-    margin-bottom: 20px;
-}
+        .search {
+            width: 100%;
+            padding: 15px;
+            border-radius: 12px;
+            border: none;
+            outline: none;
+            margin-bottom: 25px;
+            font-size: 16px;
+        }
 
-.music-card {
-    background: #17171f;
-    padding: 18px;
-    border-radius: 20px;
-    margin-bottom: 15px;
-}
+        .music-card {
+            background: #1d1d1d;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
 
-.cover {
-    width: 100%;
-    height: 220px;
-    border-radius: 18px;
-    background: #292933;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 70px;
-    margin-bottom: 15px;
-}
+        .cover {
+            width: 70px;
+            height: 70px;
+            background: #333;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+        }
 
-.info h2 {
-    font-size: 21px;
-}
+        .info {
+            flex: 1;
+        }
 
-.info p {
-    color: #888;
-    margin-top: 7px;
-}
+        .info h2 {
+            font-size: 18px;
+        }
 
-audio {
-    width: 100%;
-    margin-top: 18px;
-}
-      .cover img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 18px;
-      }
-      .hero {
-    background: #1b1b25;
-    padding: 25px;
-    border-radius: 20px;
-    text-align: center;
-    margin-bottom: 20px;
-}
+        .info p {
+            color: #999;
+            margin-top: 6px;
+        }
 
-.hero h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.hero p {
-    color: #999;
-    line-height: 1.8;
-      }
-    </style>
-</head>
-
-<body>
-
-<header>
-    <h1>🎵 MusicBox</h1>
-    <p>دنیای آهنگ‌های مورد علاقه تو</p>
-</header>
-
-<div class="container">
-<div class="hero">
-    <h2>🎶 به MusicBox خوش آمدی</h2>
-    <p>آهنگ‌های مورد علاقه‌ات را پیدا کن و گوش بده</p>
-</div>
-    <input
-        class="search"
-        type="text"
-        placeholder="🔎 جستجوی آهنگ..."
-    >
-
-    <div class="music-card">
-    
-        <div class="cover">
-    <img src="images/cover1.jpg" alt="کاور آهنگ">
-        </div>
-
-        <div class="info">
-            <h2>GTA 6</h2>
-            <p>Tiem</p>
-        </div>
-
-        <audio controls>
-    <source src="music/GTA 6.mp3" type="audio/mpeg">
-        </audio>
-  
-        </>
-    </div>
-
-    <div class="music-card">
-        <div class="cover">
-    <img src="images/cover2.jpg" alt="کاور آهنگ">
-        </div>
-
-        <div class="info">
-            <h2>Fake</h2>
-            <p>Arta</p>
-        </div>
-<audio controls>
-    <source src="music/Fake.mp3" type="audio/mpeg">
-</audio>
-      
-  </div>  
-      <div class="music-card">
-        <div class="cover">
-    <img src="images/cover3.jpg" alt="کاور آهنگ">
-      </>
-    </div>
-<div class="info">
-            <h2>Nemibinamet</h2>
-            <p>Tiem</p>
-        </div>
-
-        <audio controls>
-    <source src="music/Nemibinamet.mp3" type="audio/mpeg">
-      </audio>
-  آهنگی زیبا از Tiem.
-</div>
-  <div class="music-card">
-        <div class="cover">
-    <img src="images/cover4.jpg" alt="کاور آهنگ">
-          </div>
-  <div class="info">
-            <h2>Khaabe Amigh</h2>
-            <p>Tiem</p>
-        </div>
-
-        <audio controls>
-    <source src="music/Khaabe Amigh.mp3" type="audio/mpeg">
-        </audio>
-  </div>
-  <div class="music-card">
-        <div class="cover">
-    <img src="images/cover5.jpg" alt="کاور آهنگ">
-          </div>
-  <div class="info">
-            <h2>Begoo salam 2</h2>
-            <p>Reza Pishro</p>
-        </div>
-
-        <audio controls>
-    <source src="music/Begoo Salam 2.mp3" type="audio/mpeg">
-        </audio>
-  </div>
-      <div class="music-card">
-        <div class="cover">
-    <img src="images/cover6.jpg" alt="کاور آهنگ">
-  </div>
-    <div class="info">
-            <h2>Nahkoda</h2>
-            <p>Reza Pishro</p>
-        </div>
-
-        <audio controls>
-    <source src="music/Nahkoda.mp3" type="audio/mpeg">
-        </audio>
-<script>
+        button {
+            background: #00c853;
+            border: none;
+            color: white;
+            padding: 10px 16px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        <script>
 const search = document.querySelector(".search");
 const songs = document.querySelectorAll(".music-card");
 
@@ -228,10 +107,35 @@ search.addEventListener("input", function () {
         } else {
             song.style.display = "none";
         }
-    
+    });
 });
 </script>
-          <h2>آهنگ‌های من 🎵</h2>
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>🎵 MusicBox</h1>
+    <p>دنیای آهنگ‌های مورد علاقه تو</p>
+</header>
+
+<div class="container">
+
+    <input
+        class="search"
+        type="text"
+        placeholder="🔎 جستجوی آهنگ..."
+    >
+
+    <div class="music-card">
+        <div class="cover">🎵</div>
+
+        <div class="info">
+            <h2>آهنگ نمونه</h2>
+            <p>خواننده نمونه</p>
+        </div>
+        <h2>آهنگ‌های من 🎵</h2>
 
 <div>
   <img src="cover1.jpg" alt="عکس" width="300">
@@ -240,16 +144,23 @@ search.addEventListener("input", function () {
 <audio controls>
   <source src="GTA 6.mp3" type="audio/mpeg">
   مرورگر شما از پخش آهنگ پشتیبانی نمی‌کند.
-      </audio>
-</h2>taha</h2>
+</audio>
 
-<div>
-  <img src="cover2.jpg" alt="عکس" width="300">
+        <button>▶ پخش</button>
+    </div>
+
+    <div class="music-card">
+        <div class="cover">🎧</div>
+
+        <div class="info">
+            <h2>آهنگ دوم</h2>
+            <p>خواننده دوم</p>
+        </div>
+
+        <button>▶ پخش</button>
+    </div>
+
 </div>
 
-<audio controls>
-  <source src="Fake.mp3" type="audio/mpeg">
-  مرورگر شما از پخش آهنگ پشتیبانی نمی‌کند.
-</audio>
 </body>
 </html>
